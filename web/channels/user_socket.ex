@@ -2,7 +2,7 @@ defmodule Rap.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", Rap.RoomChannel
+  channel "lobby", Rap.LobbyChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
